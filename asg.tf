@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_launch_template" "example" {
+resource "aws_launch_template" "this_one" {
   name_prefix   = "example-"
   image_id      = var.ami_id
   instance_type = var.instance_type
